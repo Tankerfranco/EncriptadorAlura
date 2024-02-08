@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <section class="encriptador">
+        <textarea name="" id="texto" cols="30" rows="10" placeholder="Ingrese el texto para ser encriptador o desencriptado"></textarea>
+        <p>&#9888; Solo letras minusculas y sin acentos</p>
+        <div class="botones">
+          <button class="botonCopiar" onclick="verPalabras()">Encriptar</button>
+          <button class="botonCopiar" onclick="desencriptador()">Desencriptar</button>
+        </div>
+      </section>
+      <section class="copiador">
+        <img class="imgCopiar" src="img/undraw_writer_q06d.svg" alt="">
+        <h2 id="titulo">No hay texto para copiar aun</h2>
+        <p class="textoCopiar" id="textoCopiar"></p>
+        <a class="botonCopiar" id="botonCopiar" onclick="copiarTexto()">Copiar</a>
+      </section>
+      
+    </main>
+    <footer class="footer">
+      <h2>Creador por Franco Negrete</h2>
+    </footer>
+    
+    <script src="app.js">
+    </script>
+  </body>
+</html>

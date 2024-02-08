@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: lightblue;
+    
+}
+
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.encriptador{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.encriptador textarea{
+    border: none;
+    background: lightblue;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.encriptador textarea::placeholder{
+    font-size: 22px;
+    color: blue;
+}
+
+
+.copiador{
+    width: 25%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aliceblue;
+    margin-right: 50px;
+    word-break: break-all;
+}
+
+.textoCopiar{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.botonCopiar {
+    padding-top: 200px;
+    text-decoration:none;
+    font-family:monospace;
+    font-size:22px;
+    font-weight:bold;
+    height:auto;
+    width: 300px;
+    position: relative;
+    padding:25px;
+    color:#ffffff;
+    background-color:#0091ff;
+    border-radius:22px;
+    transition:all 0.3s;
+    text-align: center;
+    border: none;
+  }
+
+  .botonCopiar:hover{
+    background-color: white;
+    color: #0091ff;
+  }
+
+  .imgCopiar{
+    width: 250px;
+  }
+
+  .ocultar{
+    display: none;
+  }
+  
+
+footer{
+    text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+    main{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .encriptador textarea{
+        text-align: center;
+        
+    }
+
+    .copiador{
+        width: 50%;
+        min-height:250px;
+        margin: 10px 0;
+    }
+
+    .imgCopiar{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    main{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .encriptador textarea{
+        text-align: center;
+        
+    }
+
+    .encriptador p{
+        text-align: center;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .copiador{
+        width: 75%;
+        min-height:200px;
+        margin: 10px 0;
+    }
+
+    .imgCopiar{
+        display: none;
+    }
+}
